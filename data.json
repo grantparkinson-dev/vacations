@@ -1,5 +1,5 @@
 {
-  "title": "Las Vegas Trip",
+  "title": "Las Vegas Anniversary Trip",
   "days": [
     {
       "date": "2026-02-18",
@@ -9,7 +9,7 @@
           "time": "After Work",
           "title": "Drive to Las Vegas",
           "location": "Bonsall, CA → Las Vegas, NV",
-          "description": "~4.5 hour drive via I-15 N. Stop in Barstow if needed.",
+          "description": "~4.5 hour drive via I-15 N. Optional stop in Barstow for gas/food.",
           "type": "transport",
           "directionsUrl": "https://maps.apple.com/?saddr=Bonsall,+CA&daddr=Horseshoe+Las+Vegas,+3645+S+Las+Vegas+Blvd,+Las+Vegas,+NV"
         },
@@ -17,9 +17,17 @@
           "time": "Late Evening",
           "title": "Check in at Horseshoe Las Vegas",
           "location": "3645 S Las Vegas Blvd, Las Vegas, NV 89109",
-          "description": "Right on the Strip. Self-park or valet available.",
+          "description": "Central Strip location. Explore casino + arcade after check-in.",
           "type": "hotel",
           "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+        },
+        {
+          "time": "Late Night",
+          "title": "Casual Strip Walk + Bellagio Fountains",
+          "location": "Las Vegas Boulevard",
+          "description": "Light exploring after arrival. Bellagio fountains + nearby casinos.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Bellagio+Fountains"
         }
       ]
     },
@@ -38,84 +46,115 @@
         },
         {
           "time": "Afternoon",
-          "title": "Explore the Strip",
-          "location": "Las Vegas Boulevard",
-          "description": "Walk the Strip, check out the Bellagio fountains and the LINQ Promenade.",
+          "title": "Strip Exploration + LINQ Promenade",
+          "location": "Las Vegas Strip",
+          "description": "Walk, shops, photos, and casual exploring.",
           "type": "activity",
-          "directionsUrl": "https://maps.apple.com/?q=Las+Vegas+Strip"
+          "directionsUrl": "https://maps.apple.com/?q=LINQ+Promenade+Las+Vegas"
+        },
+        {
+          "time": "6:30 PM",
+          "title": "Dinner — Mon Ami Gabi",
+          "location": "Paris Las Vegas, 3655 S Las Vegas Blvd",
+          "description": "Romantic French bistro. Request patio seating facing fountains.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.apple.com/?q=Mon+Ami+Gabi+Las+Vegas"
         },
         {
           "time": "Evening",
-          "title": "Dinner at Hell's Kitchen",
-          "location": "Caesars Palace, 3570 S Las Vegas Blvd",
-          "description": "Gordon Ramsay's signature restaurant. Reservations recommended.",
-          "type": "restaurant",
-          "directionsUrl": "https://maps.apple.com/?q=Hells+Kitchen+Las+Vegas"
+          "title": "Arcade + Casino Exploration",
+          "location": "Horseshoe Las Vegas",
+          "description": "Arcade time and light casino fun.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
         }
       ]
     },
     {
       "date": "2026-02-20",
-      "label": "Day 3 — Friday, Feb 20",
+      "label": "Day 3 — Friday, Feb 20 (Outdoor + Buffet Night)",
       "items": [
         {
-          "time": "Morning",
-          "title": "Breakfast at The Egg & I",
-          "location": "4533 W Sahara Ave, Las Vegas",
-          "description": "Popular breakfast spot. Try the skillets.",
+          "time": "8:00 AM",
+          "title": "Drive to Red Rock Canyon",
+          "location": "1000 Scenic Loop Dr, Las Vegas, NV",
+          "description": "Scenic drive + light hiking. Plan 3–4 hours total.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Red+Rock+Canyon+National+Conservation+Area"
+        },
+        {
+          "time": "1:00 PM",
+          "title": "Return + Relax",
+          "location": "Horseshoe Las Vegas",
+          "description": "Rest, shower, recharge before dinner.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+        },
+        {
+          "time": "6:30 PM",
+          "title": "A.Y.C.E. Buffet — Lobster & Crab Night",
+          "location": "Palms Casino Resort, 4321 W Flamingo Rd",
+          "description": "Seafood-focused buffet. Sushi, lobster, crab, desserts.",
           "type": "restaurant",
-          "directionsUrl": "https://maps.apple.com/?q=The+Egg+and+I+Las+Vegas+Sahara"
+          "directionsUrl": "https://maps.apple.com/?q=AYCE+Buffet+Palms+Las+Vegas"
         },
         {
-          "time": "Afternoon",
-          "title": "High Roller Observation Wheel",
-          "location": "The LINQ Promenade, 3545 S Las Vegas Blvd",
-          "description": "30-minute ride with views of the entire valley.",
+          "time": "Night",
+          "title": "Strip Night Walk + Drinks",
+          "location": "Central Strip",
+          "description": "Relaxed wandering, bars, photos.",
           "type": "activity",
-          "ticketUrl": "https://www.caesars.com/linq/things-to-do/high-roller",
-          "directionsUrl": "https://maps.apple.com/?q=High+Roller+Las+Vegas"
-        },
-        {
-          "time": "Evening",
-          "title": "Fremont Street Experience",
-          "location": "Fremont St, Downtown Las Vegas",
-          "description": "The old-school Vegas strip. Great photo ops and cheap tables.",
-          "type": "activity",
-          "directionsUrl": "https://maps.apple.com/?q=Fremont+Street+Experience+Las+Vegas"
+          "directionsUrl": "https://maps.apple.com/?q=Las+Vegas+Strip"
         }
       ]
     },
     {
       "date": "2026-02-21",
-      "label": "Day 4 — Saturday, Feb 21",
+      "label": "Day 4 — Saturday, Feb 21 (Cirque Night)",
       "items": [
         {
-          "time": "Afternoon",
-          "title": "Pool & Relax at Horseshoe",
-          "location": "Horseshoe Las Vegas Pool Deck",
-          "description": "Take it easy before the last night out.",
-          "type": "activity",
-          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+          "time": "10:30 AM",
+          "title": "Brunch — Din Tai Fung",
+          "location": "3730 S Las Vegas Blvd",
+          "description": "Soup dumplings and share plates.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.apple.com/?q=Din+Tai+Fung+Las+Vegas"
         },
         {
-          "time": "5:00 PM",
-          "title": "Dinner at Mon Ami Gabi",
-          "location": "Paris Las Vegas, 3655 S Las Vegas Blvd",
-          "description": "French bistro with patio seating overlooking the Bellagio fountains. Early dinner before the show.",
+          "time": "Afternoon",
+          "title": "Explore Venetian + Forum Shops",
+          "location": "The Venetian / Caesars Forum Shops",
+          "description": "Indoor canals, shopping, photo spots.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=The+Venetian+Las+Vegas"
+        },
+        {
+          "time": "3:30 PM",
+          "title": "Late Lunch — Momofuku",
+          "location": "The Cosmopolitan, 3708 S Las Vegas Blvd",
+          "description": "Modern Asian-American dining.",
           "type": "restaurant",
-          "directionsUrl": "https://maps.apple.com/?q=Mon+Ami+Gabi+Las+Vegas"
+          "directionsUrl": "https://maps.apple.com/?q=Momofuku+Las+Vegas"
         },
         {
           "time": "7:00 PM",
           "title": "Cirque du Soleil",
           "location": "MGM Grand Las Vegas",
-          "description": "2 tickets. Arrive early for good seats!",
+          "description": "2 tickets. Arrive 30–45 minutes early.",
           "type": "show",
           "tickets": [
             {"label": "Ticket 1", "url": "ticketFast_1.pdf"},
             {"label": "Ticket 2", "url": "ticketFast_2.pdf"}
           ],
           "directionsUrl": "https://maps.apple.com/?q=MGM+Grand+Las+Vegas"
+        },
+        {
+          "time": "9:30 PM",
+          "title": "Dinner — Best Friend",
+          "location": "Park MGM, 3770 S Las Vegas Blvd",
+          "description": "Energetic Korean-Mexican fusion. Great post-show vibe.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.apple.com/?q=Best+Friend+Las+Vegas"
         }
       ]
     },
@@ -124,18 +163,26 @@
       "label": "Day 5 — Sunday, Feb 22",
       "items": [
         {
-          "time": "Morning",
+          "time": "9:00 AM",
+          "title": "Coffee + Casual Morning Walk",
+          "location": "Paris / Caesars area",
+          "description": "Slow final morning, photos, souvenirs.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Paris+Las+Vegas"
+        },
+        {
+          "time": "10:30 AM",
           "title": "Check out of Horseshoe",
           "location": "Horseshoe Las Vegas",
-          "description": "Check out by 11 AM.",
+          "description": "Depart by late morning.",
           "type": "hotel",
           "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
         },
         {
-          "time": "Morning",
+          "time": "Late Morning",
           "title": "Drive Home",
           "location": "Las Vegas, NV → Bonsall, CA",
-          "description": "~4.5 hours via I-15 S. Beat the Sunday traffic by leaving early.",
+          "description": "~4.5 hours via I-15 S. Leave early to avoid Sunday traffic.",
           "type": "transport",
           "directionsUrl": "https://maps.apple.com/?saddr=Horseshoe+Las+Vegas,+3645+S+Las+Vegas+Blvd,+Las+Vegas,+NV&daddr=Bonsall,+CA"
         }
