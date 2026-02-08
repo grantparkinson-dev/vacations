@@ -1,0 +1,116 @@
+{
+  "title": "My Vacation",
+  "days": [
+    {
+      "date": "2026-03-15",
+      "label": "Day 1 — Sunday, Mar 15",
+      "items": [
+        {
+          "time": "6:00 AM",
+          "title": "Flight to Barcelona",
+          "location": "JFK → BCN (Delta DL123)",
+          "description": "Terminal 4, boarding at 5:30 AM. 7h 45m flight.",
+          "type": "flight",
+          "ticketUrl": "https://www.delta.com/",
+          "directionsUrl": "https://maps.google.com/?q=JFK+Airport+Terminal+4"
+        },
+        {
+          "time": "2:45 PM",
+          "title": "Check in at Hotel Arts",
+          "location": "Carrer de la Marina, 19-21, Barcelona",
+          "description": "Reservation under Smith. Check-in from 3 PM.",
+          "type": "hotel",
+          "directionsUrl": "https://maps.google.com/?q=Hotel+Arts+Barcelona"
+        },
+        {
+          "time": "7:00 PM",
+          "title": "Dinner at Can Culleretes",
+          "location": "Carrer d'en Quintana, 5, Ciutat Vella",
+          "description": "One of Barcelona's oldest restaurants. Try the escudella.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.google.com/?q=Can+Culleretes+Barcelona"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "label": "Day 2 — Monday, Mar 16",
+      "items": [
+        {
+          "time": "9:00 AM",
+          "title": "Sagrada Família Tour",
+          "location": "Carrer de Mallorca, 401",
+          "description": "Guided tour, ~1.5 hours. Don't forget the camera!",
+          "type": "activity",
+          "ticketUrl": "https://sagradafamilia.org/en/tickets",
+          "directionsUrl": "https://maps.google.com/?q=Sagrada+Familia+Barcelona"
+        },
+        {
+          "time": "12:30 PM",
+          "title": "Lunch at La Boqueria Market",
+          "location": "La Rambla, 91, Ciutat Vella",
+          "description": "Explore the stalls. Great fresh juices and tapas.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.google.com/?q=La+Boqueria+Barcelona"
+        },
+        {
+          "time": "3:00 PM",
+          "title": "Park Güell",
+          "location": "Carrer d'Olot, s/n",
+          "description": "Timed entry. The mosaic terrace has the best views.",
+          "type": "activity",
+          "ticketUrl": "https://parkguell.barcelona/en/buy-tickets",
+          "directionsUrl": "https://maps.google.com/?q=Park+Guell+Barcelona"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Flamenco Show at Tablao Cordobes",
+          "location": "La Rambla, 35",
+          "description": "Show + dinner option. Starts at 9 PM sharp.",
+          "type": "activity",
+          "ticketUrl": "https://www.tablaocordobes.es/en/",
+          "directionsUrl": "https://maps.google.com/?q=Tablao+Cordobes+Barcelona"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-17",
+      "label": "Day 3 — Tuesday, Mar 17",
+      "items": [
+        {
+          "time": "10:00 AM",
+          "title": "Gothic Quarter Walking Tour",
+          "location": "Plaça de Sant Jaume",
+          "description": "Free walking tour, tips appreciated. Meet at the fountain.",
+          "type": "activity",
+          "directionsUrl": "https://maps.google.com/?q=Placa+de+Sant+Jaume+Barcelona"
+        },
+        {
+          "time": "1:00 PM",
+          "title": "Lunch at Bar Cañete",
+          "location": "Carrer de la Unió, 17",
+          "description": "Upscale tapas. The grilled prawns are a must.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.google.com/?q=Bar+Canete+Barcelona"
+        },
+        {
+          "time": "5:00 PM",
+          "title": "Check out & Head to Airport",
+          "location": "Hotel Arts → BCN Airport",
+          "description": "Taxi pre-booked for 5 PM. Keep boarding pass handy.",
+          "type": "transport",
+          "directionsUrl": "https://maps.google.com/?q=Barcelona+El+Prat+Airport"
+        },
+        {
+          "time": "8:30 PM",
+          "title": "Flight Home",
+          "location": "BCN → JFK (Delta DL124)",
+          "description": "Terminal 1, boarding at 8:00 PM. 9h flight.",
+          "type": "flight",
+          "ticketUrl": "https://www.delta.com/",
+          "directionsUrl": "https://maps.google.com/?q=Barcelona+Airport+Terminal+1"
+        }
+      ]
+    }
+  ]
+}
