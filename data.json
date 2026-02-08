@@ -2,11 +2,11 @@
   "title": "Las Vegas Trip",
   "days": [
     {
-      "date": "2026-02-19",
-      "label": "Day 1 — Thursday, Feb 19",
+      "date": "2026-02-18",
+      "label": "Day 1 — Wednesday, Feb 18",
       "items": [
         {
-          "time": "Morning",
+          "time": "After Work",
           "title": "Drive to Las Vegas",
           "location": "Bonsall, CA → Las Vegas, NV",
           "description": "~4.5 hour drive via I-15 N. Stop in Barstow if needed.",
@@ -14,26 +14,49 @@
           "directionsUrl": "https://maps.apple.com/?saddr=Bonsall,+CA&daddr=Horseshoe+Las+Vegas,+3645+S+Las+Vegas+Blvd,+Las+Vegas,+NV"
         },
         {
-          "time": "Afternoon",
+          "time": "Late Evening",
           "title": "Check in at Horseshoe Las Vegas",
           "location": "3645 S Las Vegas Blvd, Las Vegas, NV 89109",
           "description": "Right on the Strip. Self-park or valet available.",
           "type": "hotel",
           "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "label": "Day 2 — Thursday, Feb 19",
+      "items": [
+        {
+          "time": "10:00 AM",
+          "title": "Shark Reef Aquarium",
+          "location": "Mandalay Bay, 3950 S Las Vegas Blvd",
+          "description": "2 x Adult timed-entry tickets. Enter within the hour of reserved time. Order #Y3P-NPY-HFLH.",
+          "type": "activity",
+          "ticketUrl": "https://mgmresorts.ticketure.co/ticket_order/019c3f7a-ce47-df42-72df-326545472571",
+          "directionsUrl": "https://maps.apple.com/?q=Shark+Reef+Aquarium+Mandalay+Bay+Las+Vegas"
         },
         {
-          "time": "Evening",
+          "time": "Afternoon",
           "title": "Explore the Strip",
           "location": "Las Vegas Boulevard",
           "description": "Walk the Strip, check out the Bellagio fountains and the LINQ Promenade.",
           "type": "activity",
           "directionsUrl": "https://maps.apple.com/?q=Las+Vegas+Strip"
+        },
+        {
+          "time": "Evening",
+          "title": "Dinner at Hell's Kitchen",
+          "location": "Caesars Palace, 3570 S Las Vegas Blvd",
+          "description": "Gordon Ramsay's signature restaurant. Reservations recommended.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.apple.com/?q=Hells+Kitchen+Las+Vegas"
         }
       ]
     },
     {
       "date": "2026-02-20",
-      "label": "Day 2 — Friday, Feb 20",
+      "label": "Day 3 — Friday, Feb 20",
       "items": [
         {
           "time": "Morning",
@@ -54,26 +77,18 @@
         },
         {
           "time": "Evening",
-          "title": "Dinner at Hell's Kitchen",
-          "location": "Caesars Palace, 3570 S Las Vegas Blvd",
-          "description": "Gordon Ramsay's signature restaurant. Reservations recommended.",
-          "type": "restaurant",
-          "directionsUrl": "https://maps.apple.com/?q=Hells+Kitchen+Las+Vegas"
-        }
-      ]
-    },
-    {
-      "date": "2026-02-21",
-      "label": "Day 3 — Saturday, Feb 21",
-      "items": [
-        {
-          "time": "Morning",
           "title": "Fremont Street Experience",
           "location": "Fremont St, Downtown Las Vegas",
           "description": "The old-school Vegas strip. Great photo ops and cheap tables.",
           "type": "activity",
           "directionsUrl": "https://maps.apple.com/?q=Fremont+Street+Experience+Las+Vegas"
-        },
+        }
+      ]
+    },
+    {
+      "date": "2026-02-21",
+      "label": "Day 4 — Saturday, Feb 21",
+      "items": [
         {
           "time": "Afternoon",
           "title": "Pool & Relax at Horseshoe",
@@ -106,7 +121,7 @@
     },
     {
       "date": "2026-02-22",
-      "label": "Day 4 — Sunday, Feb 22",
+      "label": "Day 5 — Sunday, Feb 22",
       "items": [
         {
           "time": "Morning",
