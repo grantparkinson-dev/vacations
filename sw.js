@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v3';
 const CACHE_NAME = `itinerary-${CACHE_VERSION}`;
 const ASSETS = [
   './',
@@ -9,6 +9,8 @@ const ASSETS = [
   'manifest.json',
   'icons/icon-192.png',
   'icons/icon-512.png',
+  'ticketFast_1.pdf',
+  'ticketFast_2.pdf',
 ];
 
 self.addEventListener('install', (event) => {

@@ -1,114 +1,128 @@
 {
-  "title": "My Vacation",
+  "title": "Las Vegas Trip",
   "days": [
     {
-      "date": "2026-03-15",
-      "label": "Day 1 — Sunday, Mar 15",
+      "date": "2026-02-19",
+      "label": "Day 1 — Thursday, Feb 19",
       "items": [
         {
-          "time": "6:00 AM",
-          "title": "Flight to Barcelona",
-          "location": "JFK → BCN (Delta DL123)",
-          "description": "Terminal 4, boarding at 5:30 AM. 7h 45m flight.",
-          "type": "flight",
-          "ticketUrl": "https://www.delta.com/",
-          "directionsUrl": "https://maps.google.com/?q=JFK+Airport+Terminal+4"
+          "time": "Morning",
+          "title": "Drive to Las Vegas",
+          "location": "Bonsall, CA → Las Vegas, NV",
+          "description": "~4.5 hour drive via I-15 N. Stop in Barstow if needed.",
+          "type": "transport",
+          "directionsUrl": "https://maps.apple.com/?saddr=Bonsall,+CA&daddr=Horseshoe+Las+Vegas,+3645+S+Las+Vegas+Blvd,+Las+Vegas,+NV"
         },
         {
-          "time": "2:45 PM",
-          "title": "Check in at Hotel Arts",
-          "location": "Carrer de la Marina, 19-21, Barcelona",
-          "description": "Reservation under Smith. Check-in from 3 PM.",
+          "time": "Afternoon",
+          "title": "Check in at Horseshoe Las Vegas",
+          "location": "3645 S Las Vegas Blvd, Las Vegas, NV 89109",
+          "description": "Right on the Strip. Self-park or valet available.",
           "type": "hotel",
-          "directionsUrl": "https://maps.google.com/?q=Hotel+Arts+Barcelona"
+          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
         },
         {
-          "time": "7:00 PM",
-          "title": "Dinner at Can Culleretes",
-          "location": "Carrer d'en Quintana, 5, Ciutat Vella",
-          "description": "One of Barcelona's oldest restaurants. Try the escudella.",
-          "type": "restaurant",
-          "directionsUrl": "https://maps.google.com/?q=Can+Culleretes+Barcelona"
+          "time": "Evening",
+          "title": "Explore the Strip",
+          "location": "Las Vegas Boulevard",
+          "description": "Walk the Strip, check out the Bellagio fountains and the LINQ Promenade.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Las+Vegas+Strip"
         }
       ]
     },
     {
-      "date": "2026-03-16",
-      "label": "Day 2 — Monday, Mar 16",
+      "date": "2026-02-20",
+      "label": "Day 2 — Friday, Feb 20",
       "items": [
         {
-          "time": "9:00 AM",
-          "title": "Sagrada Família Tour",
-          "location": "Carrer de Mallorca, 401",
-          "description": "Guided tour, ~1.5 hours. Don't forget the camera!",
-          "type": "activity",
-          "ticketUrl": "https://sagradafamilia.org/en/tickets",
-          "directionsUrl": "https://maps.google.com/?q=Sagrada+Familia+Barcelona"
-        },
-        {
-          "time": "12:30 PM",
-          "title": "Lunch at La Boqueria Market",
-          "location": "La Rambla, 91, Ciutat Vella",
-          "description": "Explore the stalls. Great fresh juices and tapas.",
+          "time": "Morning",
+          "title": "Breakfast at The Egg & I",
+          "location": "4533 W Sahara Ave, Las Vegas",
+          "description": "Popular breakfast spot. Try the skillets.",
           "type": "restaurant",
-          "directionsUrl": "https://maps.google.com/?q=La+Boqueria+Barcelona"
+          "directionsUrl": "https://maps.apple.com/?q=The+Egg+and+I+Las+Vegas+Sahara"
         },
         {
-          "time": "3:00 PM",
-          "title": "Park Güell",
-          "location": "Carrer d'Olot, s/n",
-          "description": "Timed entry. The mosaic terrace has the best views.",
+          "time": "Afternoon",
+          "title": "High Roller Observation Wheel",
+          "location": "The LINQ Promenade, 3545 S Las Vegas Blvd",
+          "description": "30-minute ride with views of the entire valley.",
           "type": "activity",
-          "ticketUrl": "https://parkguell.barcelona/en/buy-tickets",
-          "directionsUrl": "https://maps.google.com/?q=Park+Guell+Barcelona"
+          "ticketUrl": "https://www.caesars.com/linq/things-to-do/high-roller",
+          "directionsUrl": "https://maps.apple.com/?q=High+Roller+Las+Vegas"
         },
         {
-          "time": "8:30 PM",
-          "title": "Flamenco Show at Tablao Cordobes",
-          "location": "La Rambla, 35",
-          "description": "Show + dinner option. Starts at 9 PM sharp.",
-          "type": "activity",
-          "ticketUrl": "https://www.tablaocordobes.es/en/",
-          "directionsUrl": "https://maps.google.com/?q=Tablao+Cordobes+Barcelona"
+          "time": "Evening",
+          "title": "Dinner at Hell's Kitchen",
+          "location": "Caesars Palace, 3570 S Las Vegas Blvd",
+          "description": "Gordon Ramsay's signature restaurant. Reservations recommended.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.apple.com/?q=Hells+Kitchen+Las+Vegas"
         }
       ]
     },
     {
-      "date": "2026-03-17",
-      "label": "Day 3 — Tuesday, Mar 17",
+      "date": "2026-02-21",
+      "label": "Day 3 — Saturday, Feb 21",
       "items": [
         {
-          "time": "10:00 AM",
-          "title": "Gothic Quarter Walking Tour",
-          "location": "Plaça de Sant Jaume",
-          "description": "Free walking tour, tips appreciated. Meet at the fountain.",
+          "time": "Morning",
+          "title": "Fremont Street Experience",
+          "location": "Fremont St, Downtown Las Vegas",
+          "description": "The old-school Vegas strip. Great photo ops and cheap tables.",
           "type": "activity",
-          "directionsUrl": "https://maps.google.com/?q=Placa+de+Sant+Jaume+Barcelona"
+          "directionsUrl": "https://maps.apple.com/?q=Fremont+Street+Experience+Las+Vegas"
         },
         {
-          "time": "1:00 PM",
-          "title": "Lunch at Bar Cañete",
-          "location": "Carrer de la Unió, 17",
-          "description": "Upscale tapas. The grilled prawns are a must.",
-          "type": "restaurant",
-          "directionsUrl": "https://maps.google.com/?q=Bar+Canete+Barcelona"
+          "time": "Afternoon",
+          "title": "Pool & Relax at Horseshoe",
+          "location": "Horseshoe Las Vegas Pool Deck",
+          "description": "Take it easy before the last night out.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
         },
         {
           "time": "5:00 PM",
-          "title": "Check out & Head to Airport",
-          "location": "Hotel Arts → BCN Airport",
-          "description": "Taxi pre-booked for 5 PM. Keep boarding pass handy.",
-          "type": "transport",
-          "directionsUrl": "https://maps.google.com/?q=Barcelona+El+Prat+Airport"
+          "title": "Dinner at Mon Ami Gabi",
+          "location": "Paris Las Vegas, 3655 S Las Vegas Blvd",
+          "description": "French bistro with patio seating overlooking the Bellagio fountains. Early dinner before the show.",
+          "type": "restaurant",
+          "directionsUrl": "https://maps.apple.com/?q=Mon+Ami+Gabi+Las+Vegas"
         },
         {
-          "time": "8:30 PM",
-          "title": "Flight Home",
-          "location": "BCN → JFK (Delta DL124)",
-          "description": "Terminal 1, boarding at 8:00 PM. 9h flight.",
-          "type": "flight",
-          "ticketUrl": "https://www.delta.com/",
-          "directionsUrl": "https://maps.google.com/?q=Barcelona+Airport+Terminal+1"
+          "time": "7:00 PM",
+          "title": "Cirque du Soleil",
+          "location": "MGM Grand Las Vegas",
+          "description": "2 tickets. Arrive early for good seats!",
+          "type": "show",
+          "tickets": [
+            {"label": "Ticket 1", "url": "ticketFast_1.pdf"},
+            {"label": "Ticket 2", "url": "ticketFast_2.pdf"}
+          ],
+          "directionsUrl": "https://maps.apple.com/?q=MGM+Grand+Las+Vegas"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-22",
+      "label": "Day 4 — Sunday, Feb 22",
+      "items": [
+        {
+          "time": "Morning",
+          "title": "Check out of Horseshoe",
+          "location": "Horseshoe Las Vegas",
+          "description": "Check out by 11 AM.",
+          "type": "hotel",
+          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+        },
+        {
+          "time": "Morning",
+          "title": "Drive Home",
+          "location": "Las Vegas, NV → Bonsall, CA",
+          "description": "~4.5 hours via I-15 S. Beat the Sunday traffic by leaving early.",
+          "type": "transport",
+          "directionsUrl": "https://maps.apple.com/?saddr=Horseshoe+Las+Vegas,+3645+S+Las+Vegas+Blvd,+Las+Vegas,+NV&daddr=Bonsall,+CA"
         }
       ]
     }

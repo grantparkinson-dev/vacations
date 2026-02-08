@@ -4,15 +4,20 @@ const TYPE_ICONS = {
   restaurant: '🍽️',
   activity: '🎯',
   transport: '🚕',
+  show: '🎪',
 };
 
 function renderItem(item) {
   const icon = TYPE_ICONS[item.type] || '📌';
 
   let actions = '';
-  if (item.ticketUrl || item.directionsUrl) {
+  if (item.ticketUrl || item.tickets || item.directionsUrl) {
     actions = '<div class="card-actions">';
-    if (item.ticketUrl) {
+    if (item.tickets) {
+      item.tickets.forEach((t) => {
+        actions += `<a href="${t.url}" target="_blank" rel="noopener" class="btn-tickets">🎟 ${t.label}</a>`;
+      });
+    } else if (item.ticketUrl) {
       actions += `<a href="${item.ticketUrl}" target="_blank" rel="noopener" class="btn-tickets">🎟 Tickets</a>`;
     }
     if (item.directionsUrl) {
