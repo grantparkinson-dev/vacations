@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v4';
 const CACHE_NAME = `itinerary-${CACHE_VERSION}`;
 const ASSETS = [
   './',
@@ -12,6 +12,9 @@ const ASSETS = [
   'ticketFast_1.pdf',
   'ticketFast_2.pdf',
 ];
+
+// Files that should try network first (so updates appear quickly)
+const NETWORK_FIRST = ['data.json'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -30,7 +33,24 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cached) => cached || fetch(event.request))
-  );
+  const url = new URL(event.request.url);
+  const isNetworkFirst = NETWORK_FIRST.some((f) => url.pathname.endsWith(f));
+
+  if (isNetworkFirst) {
+    // Network first: try fresh data, fall back to cache when offline
+    event.respondWith(
+      fetch(event.request)
+        .then((res) => {
+          const clone = res.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          return res;
+        })
+        .catch(() => caches.match(event.request))
+    );
+  } else {
+    // Cache first: fast loads for static assets
+    event.respondWith(
+      caches.match(event.request).then((cached) => cached || fetch(event.request))
+    );
+  }
 });
