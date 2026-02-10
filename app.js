@@ -1,27 +1,44 @@
+// Auto dark mode based on Las Vegas time (Pacific)
+function updateDarkMode() {
+  const vegasHour = new Date(
+    new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' })
+  ).getHours();
+  const isNight = vegasHour >= 18 || vegasHour < 6;
+  document.body.classList.toggle('dark', isNight);
+
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  if (themeColor) {
+    themeColor.content = isNight ? '#1a1028' : '#f2a6c7';
+  }
+}
+
+updateDarkMode();
+setInterval(updateDarkMode, 60000);
+
 const TYPE_ICONS = {
-  flight: '✈️',
-  hotel: '🏨',
-  restaurant: '🍽️',
-  activity: '🎯',
-  transport: '🚕',
-  show: '🎪',
+  flight: '\u2728\u2708\uFE0F',
+  hotel: '\uD83C\uDF1F',
+  restaurant: '\uD83C\uDF38',
+  activity: '\uD83C\uDF80',
+  transport: '\uD83D\uDC96',
+  show: '\u2728',
 };
 
 function renderItem(item) {
-  const icon = TYPE_ICONS[item.type] || '📌';
+  const icon = TYPE_ICONS[item.type] || '\uD83C\uDF80';
 
   let actions = '';
   if (item.ticketUrl || item.tickets || item.directionsUrl) {
     actions = '<div class="card-actions">';
     if (item.tickets) {
       item.tickets.forEach((t) => {
-        actions += `<a href="${t.url}" target="_blank" rel="noopener" class="btn-tickets">🎟 ${t.label}</a>`;
+        actions += `<a href="${t.url}" target="_blank" rel="noopener" class="btn-tickets">\uD83C\uDF9F ${t.label}</a>`;
       });
     } else if (item.ticketUrl) {
-      actions += `<a href="${item.ticketUrl}" target="_blank" rel="noopener" class="btn-tickets">🎟 Tickets</a>`;
+      actions += `<a href="${item.ticketUrl}" target="_blank" rel="noopener" class="btn-tickets">\uD83C\uDF9F\uFE0F Tickets</a>`;
     }
     if (item.directionsUrl) {
-      actions += `<a href="${item.directionsUrl}" target="_blank" rel="noopener" class="btn-directions">📍 Directions</a>`;
+      actions += `<a href="${item.directionsUrl}" target="_blank" rel="noopener" class="btn-directions">\u2728 Directions</a>`;
     }
     actions += '</div>';
   }
@@ -41,9 +58,11 @@ function renderItem(item) {
     </div>`;
 }
 
-function renderDay(day) {
+function renderDay(day, index) {
   const items = day.items.map(renderItem).join('');
+  const divider = index > 0 ? '<div class="day-divider">\u2729 \u2661 \u2729 \u2661 \u2729</div>' : '';
   return `
+    ${divider}
     <section class="day-section">
       <div class="day-header">${day.label}</div>
       ${items}
@@ -52,15 +71,30 @@ function renderDay(day) {
 
 async function init() {
   const app = document.getElementById('app');
-  app.innerHTML = '<div class="loading">Loading itinerary…</div>';
+  app.innerHTML = '<div class="loading">\u2728 Loading your kawaii adventure\u2026 \u2728</div>';
 
   try {
     const res = await fetch('data.json');
     if (!res.ok) throw new Error('Failed to load data');
     const data = await res.json();
 
-    document.querySelector('header h1').textContent = data.title || 'My Vacation';
-    document.title = data.title || 'Vacation Itinerary';
+    const title = data.title || 'My Vacation';
+    const subtitle = data.subtitle || '';
+
+    document.querySelector('header h1').textContent = title;
+    document.title = title;
+
+    if (subtitle) {
+      const subtitleEl = document.createElement('div');
+      subtitleEl.className = 'header-subtitle';
+      subtitleEl.textContent = subtitle;
+      document.querySelector('header').appendChild(subtitleEl);
+    }
+
+    const heartsEl = document.createElement('div');
+    heartsEl.className = 'header-hearts';
+    heartsEl.textContent = '\u2729 \u2661 \u2729 \u2661 \u2729 \u2661 \u2729';
+    document.querySelector('header').appendChild(heartsEl);
 
     app.innerHTML = data.days.map(renderDay).join('');
   } catch (err) {
