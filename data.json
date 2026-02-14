@@ -24,9 +24,9 @@
         },
         {
           "time": "Late Night",
-          "title": "Casual Strip Walk + Bellagio Fountains",
+          "title": "Bellagio Fountains + Light Gambling",
           "location": "Las Vegas Boulevard",
-          "description": "Light exploring after arrival. Bellagio fountains + nearby casinos.",
+          "description": "Bellagio fountains walk, light gambling, drinks. Early sleep — big days ahead.",
           "type": "activity",
           "directionsUrl": "https://maps.apple.com/?q=Bellagio+Fountains"
         }
@@ -34,8 +34,16 @@
     },
     {
       "date": "2026-02-19",
-      "label": "Day 2 — Thursday, Feb 19",
+      "label": "Day 2 — Thursday, Feb 19 (Aquarium + Romantic Strip Night)",
       "items": [
+        {
+          "time": "Morning",
+          "title": "Sleep In + Coffee Near Hotel",
+          "location": "Horseshoe Las Vegas area",
+          "description": "Slow morning. Grab coffee near the hotel before heading out.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+        },
         {
           "time": "10:00 AM",
           "title": "Shark Reef Aquarium",
@@ -63,31 +71,48 @@
         },
         {
           "time": "Evening",
-          "title": "Arcade + Casino Exploration",
+          "title": "Arcade Time at Horseshoe",
           "location": "Horseshoe Las Vegas",
           "description": "Arcade time and light casino fun.",
           "type": "activity",
           "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
+        },
+        {
+          "time": "Night",
+          "title": "Romantic Strip Stroll",
+          "location": "Las Vegas Boulevard",
+          "description": "End the night with a romantic walk along the Strip.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Las+Vegas+Strip"
         }
       ]
     },
     {
       "date": "2026-02-20",
-      "label": "Day 3 — Friday, Feb 20 (Outdoor + Buffet Night)",
+      "label": "Day 3 — Friday, Feb 20 (Hard Hike + Seafood Buffet Night)",
       "items": [
         {
-          "time": "8:00 AM",
-          "title": "Drive to Red Rock Canyon",
+          "time": "7:30 AM",
+          "title": "Drive to Red Rock Canyon — Ice Box Canyon Trail",
           "location": "1000 Scenic Loop Dr, Las Vegas, NV",
-          "description": "Scenic drive + light hiking. Plan 3–4 hours total.",
+          "description": "HARD HIKE DAY. Trail: Ice Box Canyon — ~6 miles round trip, boulder scrambling, shaded canyon sections. Physically demanding, no ropes required. One of the most 'real hike' experiences near Vegas. Drive ~30 min from hotel. Scenic Drive requires timed entry reservation (~$20 vehicle entry or national parks pass). Book ahead on BLM reservation site.",
           "type": "activity",
-          "directionsUrl": "https://maps.apple.com/?q=Red+Rock+Canyon+National+Conservation+Area"
+          "directionsUrl": "https://maps.apple.com/?q=Red+Rock+Canyon+National+Conservation+Area",
+          "checklist": [
+            "2–3 liters of water per person",
+            "Trail shoes / hiking shoes",
+            "Sunscreen + hat",
+            "Snacks / electrolytes",
+            "Trekking poles (for boulder descents)",
+            "Offline map download (AllTrails)",
+            "Light jacket (wind in canyon)"
+          ]
         },
         {
           "time": "1:00 PM",
-          "title": "Return + Relax",
+          "title": "Return + Shower + Nap",
           "location": "Horseshoe Las Vegas",
-          "description": "Rest, shower, recharge before dinner.",
+          "description": "Rest and recharge after the hike. Desert dehydration is real — hydrate well.",
           "type": "activity",
           "directionsUrl": "https://maps.apple.com/?q=Horseshoe+Las+Vegas"
         },
@@ -111,7 +136,7 @@
     },
     {
       "date": "2026-02-21",
-      "label": "Day 4 — Saturday, Feb 21 (Cirque Night)",
+      "label": "Day 4 — Saturday, Feb 21 (Arcades + Cirque Night)",
       "items": [
         {
           "time": "10:30 AM",
@@ -138,6 +163,22 @@
           "directionsUrl": "https://maps.apple.com/?q=Momofuku+Las+Vegas"
         },
         {
+          "time": "4:00 PM",
+          "title": "Round1 Bowling & Arcade",
+          "location": "Meadows Mall, 4300 Meadows Ln, Las Vegas, NV",
+          "description": "Main arcade stop. Japanese crane machines, rhythm games, prize machines everywhere. Plan 1.5–2 hours. Winner buys drinks!",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Round1+Bowling+Amusement+Las+Vegas"
+        },
+        {
+          "time": "5:30 PM",
+          "title": "Game Nest Arcade",
+          "location": "Las Vegas, NV",
+          "description": "Secondary arcade — claw machines, import Japanese cabinets, less crowded enthusiast vibe. Plan 45–60 mins.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Game+Nest+Arcade+Las+Vegas"
+        },
+        {
           "time": "7:00 PM",
           "title": "Cirque du Soleil",
           "location": "MGM Grand Las Vegas",
@@ -156,6 +197,14 @@
           "description": "Energetic Korean-Mexican fusion. Great post-show vibe.",
           "type": "restaurant",
           "directionsUrl": "https://maps.apple.com/?q=Best+Friend+Las+Vegas"
+        },
+        {
+          "time": "Late Night",
+          "title": "Arcade Rematch or Rooftop Drinks",
+          "location": "Las Vegas Strip",
+          "description": "End the night with a final arcade session or wind down with rooftop drinks.",
+          "type": "activity",
+          "directionsUrl": "https://maps.apple.com/?q=Las+Vegas+Strip"
         }
       ]
     },
