@@ -1,12 +1,17 @@
 {
-  "name": "Vacation Itinerary",
-  "short_name": "Itinerary",
+  "name": "Las Vegas Anniversary Trip",
+  "short_name": "Vegas Trip",
   "description": "Your vacation itinerary at a glance",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f0f2f5",
-  "theme_color": "#c0392b",
+  "background_color": "#fff0f5",
+  "theme_color": "#c8a2f8",
   "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
     {
       "src": "icons/icon-192.png",
       "sizes": "192x192",

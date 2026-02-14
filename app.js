@@ -24,7 +24,7 @@ const TYPE_ICONS = {
   show: '\u2728',
 };
 
-function renderItem(item) {
+function renderItem(item, index) {
   const icon = TYPE_ICONS[item.type] || '\uD83C\uDF80';
 
   let actions = '';
@@ -43,23 +43,43 @@ function renderItem(item) {
     actions += '</div>';
   }
 
+  let checklist = '';
+  if (item.checklist && item.checklist.length) {
+    checklist = '<ul class="card-checklist">' +
+      item.checklist.map((c) => `<li>${c}</li>`).join('') +
+      '</ul>';
+  }
+
+  const hasDetails = item.location || item.description || actions || checklist;
+  const expandableClass = hasDetails ? ' card-expandable' : '';
+  const expandableAttrs = hasDetails ? ' role="button" tabindex="0" aria-expanded="false"' : '';
+  const chevron = hasDetails ? '<span class="card-chevron" aria-hidden="true">\u203A</span>' : '';
+  const delay = `animation-delay: ${index * 0.06}s`;
+
+  let details = '';
+  if (hasDetails) {
+    details = '<div class="card-details">';
+    if (item.location) details += `<div class="card-location">${item.location}</div>`;
+    if (item.description) details += `<div class="card-description">${item.description}</div>`;
+    details += checklist + actions + '</div>';
+  }
+
   return `
-    <div class="card">
+    <div class="card${expandableClass}" style="${delay}"${expandableAttrs}>
       <div class="card-top">
         <div class="card-icon">${icon}</div>
         <div class="card-info">
           <div class="card-time">${item.time}</div>
           <div class="card-title">${item.title}</div>
-          ${item.location ? `<div class="card-location">${item.location}</div>` : ''}
         </div>
+        ${chevron}
       </div>
-      ${item.description ? `<div class="card-description">${item.description}</div>` : ''}
-      ${actions}
+      ${details}
     </div>`;
 }
 
 function renderDay(day, index) {
-  const items = day.items.map(renderItem).join('');
+  const items = day.items.map((item, i) => renderItem(item, i)).join('');
   const divider = index > 0 ? '<div class="day-divider">\u2729 \u2661 \u2729 \u2661 \u2729</div>' : '';
   return `
     ${divider}
@@ -101,6 +121,15 @@ async function init() {
     app.innerHTML = `<div class="error">Could not load itinerary.<br>${err.message}</div>`;
   }
 }
+
+// Delegated click handler for expandable cards
+document.getElementById('app').addEventListener('click', (e) => {
+  if (e.target.closest('a')) return; // let links work normally
+  const card = e.target.closest('.card-expandable');
+  if (!card) return;
+  const expanded = card.classList.toggle('card-expanded');
+  card.setAttribute('aria-expanded', expanded);
+});
 
 // Register service worker
 if ('serviceWorker' in navigator) {

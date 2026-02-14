@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7a8c4"/>
+      <stop offset="50%" stop-color="#c8a2f8"/>
+      <stop offset="100%" stop-color="#a8d8ea"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+
+  <!-- White airplane silhouette, tilted, kawaii style -->
+  <g transform="translate(256,220) rotate(-20)" fill="white" opacity="0.95">
+    <path d="M-10,-80 C-10,-90 10,-90 10,-80 L30,-10 L80,30 C85,33 85,47 80,44
+             L30,24 L10,80 L25,100 C28,104 22,108 18,105 L0,85 L-18,105
+             C-22,108 -28,104 -25,100 L-10,80 L-30,24 L-80,44
+             C-85,47 -85,33 -80,30 L-30,-10 Z"/>
+  </g>
+
+  <!-- Sparkle stars around the airplane -->
+  <!-- Top-right sparkle -->
+  <g transform="translate(370,120)" fill="white" opacity="0.8">
+    <path d="M0,-18 L4,-4 L18,0 L4,4 L0,18 L-4,4 L-18,0 L-4,-4 Z"/>
+  </g>
+  <!-- Bottom-left sparkle -->
+  <g transform="translate(140,380)" fill="white" opacity="0.6">
+    <path d="M0,-12 L3,-3 L12,0 L3,3 L0,12 L-3,3 L-12,0 L-3,-3 Z"/>
+  </g>
+  <!-- Small sparkle -->
+  <g transform="translate(390,340)" fill="white" opacity="0.5">
+    <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z"/>
+  </g>
+
+  <!-- Heart at bottom -->
+  <g transform="translate(256,400) scale(0.6)" fill="white" opacity="0.85">
+    <path d="M0,-30 C-10,-50 -40,-50 -40,-25 C-40,0 0,35 0,35
+             C0,35 40,0 40,-25 C40,-50 10,-50 0,-30 Z"/>
+  </g>
+</svg>

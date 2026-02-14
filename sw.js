@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const CACHE_NAME = `itinerary-${CACHE_VERSION}`;
 const ASSETS = [
   './',
@@ -7,6 +7,7 @@ const ASSETS = [
   'app.js',
   'data.json',
   'manifest.json',
+  'icons/icon.svg',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'ticketFast_1.pdf',
